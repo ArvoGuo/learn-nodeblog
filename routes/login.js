@@ -27,6 +27,7 @@ router.post('/', function(req, res) {
       res.send('password error');
       return;
     }
+    req.session.user = user;
     res.redirect('/');
 
   });

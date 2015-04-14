@@ -39,7 +39,7 @@ router.post('/', function(req, res) {
         res.send(err);
       }
       req.session.user = newUser;
-      res.redirect('/reg');
+      res.redirect('/');
     });
   });
 

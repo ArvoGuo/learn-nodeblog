@@ -1,4 +1,8 @@
 extends layout
 
 block content
-  h1 index
+  h1 all posts
+  each val in posts
+    p= val.user + ' post: ' + val.post + ', ' + val.time
+
+
