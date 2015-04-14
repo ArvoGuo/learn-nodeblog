@@ -3,5 +3,26 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/lib/bootstrap/dist/css/bootstrap.min.css")
+    style.
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
   body
-    block content
+    if user
+      p= user.name
+    else
+      p not login
+    ul.nav.nav-tabs.nav-justified
+      li.active
+        a(role="presentation",href="/") index
+      li
+        a(role="presentation",href="/login") login
+      li
+        a(role="presentation",href="/reg") reg
+    div#container.container
+      p= info
+      block content
+  script(src="/lib/jquery/dist/jquery.min.js")
+  script(src="/lib/bootstrap/dist/js/bootstrap.min.js")
