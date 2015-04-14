@@ -1,1 +1,2 @@
-我要写一个聊天室
+* -[ ] res.flash
+* -[ ] checkLogin

@@ -12,15 +12,20 @@ html
   body
     if user
       p= user.name
+      ul.nav.nav-tabs.nav-justified
+        li.active
+          a(role="presentation",href="/") index
+        li
+          a(role="presentation",href="/logout") loginout
     else
       p not login
-    ul.nav.nav-tabs.nav-justified
-      li.active
-        a(role="presentation",href="/") index
-      li
-        a(role="presentation",href="/login") login
-      li
-        a(role="presentation",href="/reg") reg
+      ul.nav.nav-tabs.nav-justified
+        li.active
+          a(role="presentation",href="/") index
+        li
+          a(role="presentation",href="/login") login
+        li
+          a(role="presentation",href="/reg") reg
     div#container.container
       p= info
       block content
