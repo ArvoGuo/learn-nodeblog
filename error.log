@@ -1,0 +1,20 @@
+[Tue Apr 14 2015 17:04:09 GMT+0800 (CST)] /
+SyntaxError: /Users/Arvo/github/learn-nodeblog/views/index.jade:6
+    4|   h1 all posts
+    5|   each val in posts
+  > 6|     p= val.user + ' post: ' + val.post + ', ' + val.time;
+    7| 
+    8| 
+    9| 
+
+Unexpected token ;
+    at Function (<anonymous>)
+    at assertExpression (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/lexer.js:30:3)
+    at Object.Lexer.code (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/lexer.js:570:23)
+    at Object.Lexer.next (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/lexer.js:864:15)
+    at Object.Lexer.lookahead (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/lexer.js:113:46)
+    at Parser.lookahead (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/parser.js:100:23)
+    at Parser.peek (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/parser.js:77:17)
+    at Parser.tag (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/parser.js:733:22)
+    at Parser.parseTag (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/parser.js:719:17)
+    at Parser.parseExpr (/Users/Arvo/github/learn-nodeblog/node_modules/jade/lib/parser.js:188:21)
